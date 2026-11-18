@@ -1,1 +1,1 @@
-# etch-a-sketch-odin
+try it : https://its-jazee.github.io/etch-a-sketch-odin
