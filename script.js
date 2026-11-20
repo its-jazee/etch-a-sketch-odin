@@ -18,6 +18,13 @@ newPadBtn.addEventListener("click",(e) => {
     }
 })
 
+const getRandomRgb = () => {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+};
+
 function generateGrid(x){
     for(let i = 0; i < x; i++){
         let row = document.createElement("div");
@@ -29,7 +36,7 @@ function generateGrid(x){
             row.appendChild(grids);
 
             grids.addEventListener("mouseover", (event) => {
-                grids.style.backgroundColor = "grey";
+                grids.style.backgroundColor = getRandomRgb();
             })
         }
     }    
